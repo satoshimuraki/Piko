@@ -7,8 +7,10 @@
 @import AVFoundation;
 @import Foundation;
 
-@class SoundBufferStorage;
-@class SoundSketch;
+@class SFBufferOperator;
+@class SFBufferStorage;
+@class SFNode;
+@class SFSketch;
 
 @interface SFPlaybackManager : NSObject
 
@@ -27,12 +29,13 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // MARK: Audio Sketch
 
-@property (nonatomic, strong) SoundSketch *sketch;
+@property (nonatomic, strong) SFSketch *sketch;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// MARK: Audio Buffer Storage
+// MARK: Rendering
 
-@property (nonatomic, strong) SoundBufferStorage *bufferStorage;
+- (SFBufferOperator *)getSFBufferOperator;
+- (BOOL)render:(SFNode *)node index:(UInt64)index count:(NSInteger)count to:(double *)buffer;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // MARK: Play

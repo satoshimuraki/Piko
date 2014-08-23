@@ -8,7 +8,25 @@
 
 #import "SFDebug.h"
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#if (PIKO_OBJC)
+#import "SFBuffer.h"
+#import "SFBufferOperator.h"
+#import "SFBufferStorage.h"
+#import "SFSketch.h"
+#import "SFOutputNode.h"
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#elif defined (PIKO_PREFERS_OBJC)
+#import "SFBuffer.h"
+#import "SFBufferOperator.h"
+#import "SFBufferStorage.h"
+#import "SFSketch.h"
+#import "SFOutputNode.h"
 #import "Piko-Swift.h"
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#else
+#import "PikoSwift-Swift.h"
+#endif
 
 #define SFAudioOutputBusNumber          0
 
@@ -30,6 +48,9 @@ static SFPlaybackManager *sSharedManager = nil;
 /* Output */
 @property (nonatomic) AudioUnit outputUnit;
 @property (nonatomic) unsigned long long frameIndex;
+
+/* Sound Buffer */
+@property (nonatomic, strong) SFBufferStorage *bufferStorage;
 
 /* Play */
 @property (nonatomic) BOOL playing;
@@ -119,7 +140,7 @@ static SFPlaybackManager *sSharedManager = nil;
     SFLogRaw(@"frame: %u (%f)\n", numberOfFrames, _sampleRate * (Float64)duration);
 
     /* Create buffer storage. */
-    _bufferStorage = [[SoundBufferStorage alloc] initWithNumberOfFrames:numberOfFrames];
+    _bufferStorage = [[SFBufferStorage alloc] initWithNumberOfFrames:numberOfFrames];
     SFGotoIf(_bufferStorage == nil, bail);
 
     /* Setup Output Unit */
@@ -258,7 +279,7 @@ bail:
     outL = ioData->mBuffers[0].mData;
     outR = ioData->mBuffers[1].mData;
 
-    SoundBuffer *buffer;
+    SFBuffer *buffer;
 
     buffer = [self.bufferStorage pull];
     SFReturnValueIf(buffer == nil, noErr);
@@ -267,7 +288,7 @@ bail:
     UInt32 i, readFrames, targetFrames;
     Float64 sample;
 //    Float64 *dataPtr;
-    SoundNode *node;
+    SFNode *node;
 
 //    dataPtr = malloc(sizeof(Float64) * buffer.numberOfFrames);
 
@@ -281,10 +302,10 @@ bail:
         NSLog(@"time: %f\n", t);
 #endif
 
-        [node audioManager:self
-                renderFrameIndex: _frameIndex
-                  numberOfFrames: targetFrames
-                        toBuffer: buffer.data];
+        BOOL ret = [self render:node index:_frameIndex count:targetFrames to:buffer.data];
+        if (ret == NO) {
+            NSLog(@"ummm...");
+        }
 
         i = 0;
         while (i < targetFrames)
@@ -411,6 +432,21 @@ bail:
     _outputUnit = NULL;
 }
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// MARK: Sound Buffer
+
+- (SFBufferOperator *)getSFBufferOperator
+{
+    return [[SFBufferOperator alloc] initWithStorage:self.bufferStorage];
+}
+
+- (BOOL)render:(SFNode *)node index:(UInt64)index count:(NSInteger)count to:(double *)buffer
+{
+    @autoreleasepool {
+        return [node renderForPlayer:self index:index count:count to:buffer];
+    }
+}
+
 #pragma mark -
 #pragma mark Play
 
@@ -435,17 +471,17 @@ bail:
 
 - (BOOL)stop
 {
-//    if (!self.playing)
-//        return YES;
-//
-//    SFAssert(_outputUnit != NULL);
-//
-//    OSStatus err;
-//
-//    err = AudioOutputUnitStop(_outputUnit);
-//    SFReturnValueIf(err != noErr, NO);
-//
-//    self.playing = NO;
+    if (!self.playing)
+        return YES;
+
+    SFAssert(_outputUnit != NULL);
+
+    OSStatus err;
+
+    err = AudioOutputUnitStop(_outputUnit);
+    SFReturnValueIf(err != noErr, NO);
+
+    self.playing = NO;
     return YES;
 }
 

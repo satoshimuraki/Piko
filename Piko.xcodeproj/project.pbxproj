@@ -7,61 +7,170 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7423E67D199A665700026D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7423E673199A665700026D91 /* Main.storyboard */; };
+		7406EAF319A8A3C400DBAA5D /* MainObjC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7406EAF119A8A3C400DBAA5D /* MainObjC.storyboard */; };
+		741FB4C219A84071005DDBCD /* SFBreakpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 741FB4C119A84071005DDBCD /* SFBreakpoint.m */; };
+		741FB4C319A84071005DDBCD /* SFBreakpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 741FB4C119A84071005DDBCD /* SFBreakpoint.m */; };
+		741FB4C519A842FE005DDBCD /* SFBreakpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741FB4C419A842FE005DDBCD /* SFBreakpoint.swift */; };
+		741FB4C619A85D6A005DDBCD /* SFSketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B3D01B19A63455005BF8B4 /* SFSketch.m */; };
 		7423E67E199A665700026D91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7423E675199A665700026D91 /* Images.xcassets */; };
-		7423E680199A665700026D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E678199A665700026D91 /* AppDelegate.swift */; };
-		7423E682199A665700026D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E67C199A665700026D91 /* ViewController.swift */; };
-		7423E684199A691300026D91 /* SoundBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E683199A691300026D91 /* SoundBuffer.swift */; };
-		7423E686199A6F9600026D91 /* SoundBufferStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E685199A6F9600026D91 /* SoundBufferStorage.swift */; };
+		7423E680199A665700026D91 /* PKAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E678199A665700026D91 /* PKAppDelegate.swift */; };
+		7423E682199A665700026D91 /* PKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E67C199A665700026D91 /* PKViewController.swift */; };
 		7423E689199AF15400026D91 /* SFDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 7423E688199AF15400026D91 /* SFDebug.m */; };
-		7423E6BD199AF9D400026D91 /* SoundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6BC199AF9D400026D91 /* SoundNode.swift */; };
-		7423E6BF199AFA5E00026D91 /* SoundSketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6BE199AFA5E00026D91 /* SoundSketch.swift */; };
 		7423E6C5199B03BF00026D91 /* SoundUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6C4199B03BF00026D91 /* SoundUtility.swift */; };
 		7423E6C7199B0D3500026D91 /* SFPlaybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7423E67B199A665700026D91 /* SFPlaybackManager.m */; };
-		7423E6C9199C7E3E00026D91 /* SoundInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6C8199C7E3E00026D91 /* SoundInput.swift */; };
-		7423E6CB199C7E5600026D91 /* SoundOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6CA199C7E5600026D91 /* SoundOutput.swift */; };
-		7423E6CD199C7E7700026D91 /* OutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6CC199C7E7700026D91 /* OutputNode.swift */; };
-		7423E6CF199C7E9000026D91 /* StaticNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6CE199C7E9000026D91 /* StaticNode.swift */; };
-		7423E6D1199C7EA300026D91 /* SineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6D0199C7EA300026D91 /* SineNode.swift */; };
-		7423E6D9199C84E900026D91 /* BreakpointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6D8199C84E900026D91 /* BreakpointNode.swift */; };
-		7423E6DB199C8F8500026D91 /* MixerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6DA199C8F8500026D91 /* MixerNode.swift */; };
-		7423E6DD199C984200026D91 /* WhiteNoiseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6DC199C984200026D91 /* WhiteNoiseNode.swift */; };
-		7423E6DF199CADF400026D91 /* ScaleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6DE199CADF400026D91 /* ScaleNode.swift */; };
-		7423E6E1199CE5C900026D91 /* SquareNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6E0199CE5C900026D91 /* SquareNode.swift */; };
-		7423E6E3199CEF3C00026D91 /* TriangleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6E2199CEF3C00026D91 /* TriangleNode.swift */; };
+		74334FCB19A8643900CCD78D /* SFBreakpointNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 74334FCA19A8643900CCD78D /* SFBreakpointNode.m */; };
+		74334FCC19A8643900CCD78D /* SFBreakpointNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 74334FCA19A8643900CCD78D /* SFBreakpointNode.m */; };
+		7433500919A8776B00CCD78D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7433500719A8776B00CCD78D /* Main.storyboard */; };
+		7433500A19A8776B00CCD78D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7433500719A8776B00CCD78D /* Main.storyboard */; };
+		7433500B19A8776B00CCD78D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7433500719A8776B00CCD78D /* Main.storyboard */; };
+		746FA44D19A3B42A00CA458E /* SFTriangleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA44819A3AF3C00CA458E /* SFTriangleNode.m */; };
+		746FA45019A3B54200CA458E /* SFSineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA44F19A3B54200CA458E /* SFSineNode.m */; };
+		746FA45119A3B82C00CA458E /* SFStaticNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA44B19A3B1CB00CA458E /* SFStaticNode.m */; };
+		746FA45419A3B92400CA458E /* SFMixerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA45319A3B92400CA458E /* SFMixerNode.m */; };
+		746FA45719A4160700CA458E /* SFSquareNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA45619A4160700CA458E /* SFSquareNode.m */; };
+		748EA9CD19A4D50100092752 /* SFScaleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 748EA9CC19A4D50100092752 /* SFScaleNode.m */; };
+		74AFD6A819A38A3000727E3D /* SFScaleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6DE199CADF400026D91 /* SFScaleNode.swift */; };
+		74AFD6A919A38A3000727E3D /* SFPlaybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7423E67B199A665700026D91 /* SFPlaybackManager.m */; };
+		74AFD6AA19A38A3000727E3D /* SFDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 7423E688199AF15400026D91 /* SFDebug.m */; };
+		74AFD6AB19A38A3000727E3D /* PKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E67C199A665700026D91 /* PKViewController.swift */; };
+		74AFD6AC19A38A3000727E3D /* SFMixerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6DA199C8F8500026D91 /* SFMixerNode.swift */; };
+		74AFD6AD19A38A3000727E3D /* SFTriangleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6E2199CEF3C00026D91 /* SFTriangleNode.swift */; };
+		74AFD6AE19A38A3000727E3D /* SFBufferOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413F37F19A2239C0002AF43 /* SFBufferOperator.swift */; };
+		74AFD6AF19A38A3000727E3D /* SFOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6CA199C7E5600026D91 /* SFOutput.swift */; };
+		74AFD6B019A38A3000727E3D /* SFOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6CC199C7E7700026D91 /* SFOutputNode.swift */; };
+		74AFD6B119A38A3000727E3D /* SoundUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6C4199B03BF00026D91 /* SoundUtility.swift */; };
+		74AFD6B219A38A3000727E3D /* SFNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6BC199AF9D400026D91 /* SFNode.swift */; };
+		74AFD6B319A38A3000727E3D /* SFSquareNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6E0199CE5C900026D91 /* SFSquareNode.swift */; };
+		74AFD6B419A38A3000727E3D /* SFBufferStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E685199A6F9600026D91 /* SFBufferStorage.swift */; };
+		74AFD6B519A38A3000727E3D /* SFInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6C8199C7E3E00026D91 /* SFInput.swift */; };
+		74AFD6B619A38A3000727E3D /* SFBreakpointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6D8199C84E900026D91 /* SFBreakpointNode.swift */; };
+		74AFD6B719A38A3000727E3D /* PKAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E678199A665700026D91 /* PKAppDelegate.swift */; };
+		74AFD6B819A38A3000727E3D /* SFStaticNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6CE199C7E9000026D91 /* SFStaticNode.swift */; };
+		74AFD6B919A38A3000727E3D /* SFBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E683199A691300026D91 /* SFBuffer.swift */; };
+		74AFD6BA19A38A3000727E3D /* SFWhiteNoiseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6DC199C984200026D91 /* SFWhiteNoiseNode.swift */; };
+		74AFD6BB19A38A3000727E3D /* SFSineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6D0199C7EA300026D91 /* SFSineNode.swift */; };
+		74AFD6BC19A38A3000727E3D /* SFSketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423E6BE199AFA5E00026D91 /* SFSketch.swift */; };
+		74AFD6C019A38A3000727E3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7423E675199A665700026D91 /* Images.xcassets */; };
+		74AFD6C819A38AC800727E3D /* SFInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AFD6C719A38AC800727E3D /* SFInput.m */; };
+		74AFD6CB19A38D3600727E3D /* SFOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AFD6CA19A38D3600727E3D /* SFOutput.m */; };
+		74B3D01419A62CE3005BF8B4 /* PKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B3D01319A62CE3005BF8B4 /* PKAppDelegate.m */; };
+		74B3D01719A62CF1005BF8B4 /* PKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B3D01619A62CF1005BF8B4 /* PKViewController.m */; };
+		74B3D01919A62FD5005BF8B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B3D01819A62FD5005BF8B4 /* main.m */; };
+		74B3D01C19A63455005BF8B4 /* SFSketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B3D01B19A63455005BF8B4 /* SFSketch.m */; };
+		74B3D01D19A639B2005BF8B4 /* SFNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5C719A39B82009585F7 /* SFNode.m */; };
+		74B3D01E19A639B8005BF8B4 /* SFOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AFD6CA19A38D3600727E3D /* SFOutput.m */; };
+		74B3D01F19A639BB005BF8B4 /* SFInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AFD6C719A38AC800727E3D /* SFInput.m */; };
+		74B3D02019A639C0005BF8B4 /* SFOutputNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5CA19A39E44009585F7 /* SFOutputNode.m */; };
+		74B3D02119A63A0C005BF8B4 /* SFDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 7423E688199AF15400026D91 /* SFDebug.m */; };
+		74B3D02219A63A0F005BF8B4 /* SFPlaybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7423E67B199A665700026D91 /* SFPlaybackManager.m */; };
+		74B3D02319A63A12005BF8B4 /* SFBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5BE19A39152009585F7 /* SFBuffer.m */; };
+		74B3D02419A63A15005BF8B4 /* SFBufferOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5C119A394EC009585F7 /* SFBufferOperator.m */; };
+		74B3D02519A63A17005BF8B4 /* SFBufferStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5C419A395C1009585F7 /* SFBufferStorage.m */; };
+		74B3D02719A64047005BF8B4 /* SFMixerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA45319A3B92400CA458E /* SFMixerNode.m */; };
+		74B3D02819A6404B005BF8B4 /* SFSquareNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA45619A4160700CA458E /* SFSquareNode.m */; };
+		74B3D02919A6404D005BF8B4 /* SFScaleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 748EA9CC19A4D50100092752 /* SFScaleNode.m */; };
+		74B3D02A19A64050005BF8B4 /* SFSineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA44F19A3B54200CA458E /* SFSineNode.m */; };
+		74B3D02B19A64052005BF8B4 /* SFStaticNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA44B19A3B1CB00CA458E /* SFStaticNode.m */; };
+		74B3D02C19A64054005BF8B4 /* SFTriangleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FA44819A3AF3C00CA458E /* SFTriangleNode.m */; };
+		74B3D02D19A64058005BF8B4 /* SFWhiteNoiseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5CD19A3A18D009585F7 /* SFWhiteNoiseNode.m */; };
+		74EBE5BF19A39152009585F7 /* SFBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5BE19A39152009585F7 /* SFBuffer.m */; };
+		74EBE5C219A394EC009585F7 /* SFBufferOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5C119A394EC009585F7 /* SFBufferOperator.m */; };
+		74EBE5C519A395C1009585F7 /* SFBufferStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5C419A395C1009585F7 /* SFBufferStorage.m */; };
+		74EBE5C819A39B82009585F7 /* SFNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5C719A39B82009585F7 /* SFNode.m */; };
+		74EBE5CB19A39E44009585F7 /* SFOutputNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5CA19A39E44009585F7 /* SFOutputNode.m */; };
+		74EBE5CE19A3A18D009585F7 /* SFWhiteNoiseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EBE5CD19A3A18D009585F7 /* SFWhiteNoiseNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7423E674199A665700026D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7406EAF219A8A3C400DBAA5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainObjC.storyboard; sourceTree = "<group>"; };
+		7406EAF419A8A42500DBAA5D /* InfoObjC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoObjC.plist; sourceTree = "<group>"; };
+		7413F37F19A2239C0002AF43 /* SFBufferOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBufferOperator.swift; sourceTree = "<group>"; };
+		741FB4C019A84071005DDBCD /* SFBreakpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBreakpoint.h; sourceTree = "<group>"; };
+		741FB4C119A84071005DDBCD /* SFBreakpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBreakpoint.m; sourceTree = "<group>"; };
+		741FB4C419A842FE005DDBCD /* SFBreakpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBreakpoint.swift; sourceTree = "<group>"; };
 		7423E675199A665700026D91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7423E676199A665700026D91 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7423E678199A665700026D91 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7423E678199A665700026D91 /* PKAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKAppDelegate.swift; sourceTree = "<group>"; };
 		7423E679199A665700026D91 /* Piko-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Piko-Bridging-Header.h"; sourceTree = "<group>"; };
 		7423E67A199A665700026D91 /* SFPlaybackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPlaybackManager.h; sourceTree = "<group>"; };
 		7423E67B199A665700026D91 /* SFPlaybackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPlaybackManager.m; sourceTree = "<group>"; };
-		7423E67C199A665700026D91 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7423E683199A691300026D91 /* SoundBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundBuffer.swift; sourceTree = "<group>"; };
-		7423E685199A6F9600026D91 /* SoundBufferStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundBufferStorage.swift; sourceTree = "<group>"; };
+		7423E67C199A665700026D91 /* PKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKViewController.swift; sourceTree = "<group>"; };
+		7423E683199A691300026D91 /* SFBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBuffer.swift; sourceTree = "<group>"; };
+		7423E685199A6F9600026D91 /* SFBufferStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBufferStorage.swift; sourceTree = "<group>"; };
 		7423E687199AF15400026D91 /* SFDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDebug.h; sourceTree = "<group>"; };
 		7423E688199AF15400026D91 /* SFDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDebug.m; sourceTree = "<group>"; };
-		7423E6BC199AF9D400026D91 /* SoundNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundNode.swift; sourceTree = "<group>"; };
-		7423E6BE199AFA5E00026D91 /* SoundSketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundSketch.swift; sourceTree = "<group>"; };
+		7423E6BC199AF9D400026D91 /* SFNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNode.swift; sourceTree = "<group>"; };
+		7423E6BE199AFA5E00026D91 /* SFSketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSketch.swift; sourceTree = "<group>"; };
 		7423E6C4199B03BF00026D91 /* SoundUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundUtility.swift; sourceTree = "<group>"; };
-		7423E6C8199C7E3E00026D91 /* SoundInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundInput.swift; sourceTree = "<group>"; };
-		7423E6CA199C7E5600026D91 /* SoundOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundOutput.swift; sourceTree = "<group>"; };
-		7423E6CC199C7E7700026D91 /* OutputNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputNode.swift; sourceTree = "<group>"; };
-		7423E6CE199C7E9000026D91 /* StaticNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticNode.swift; sourceTree = "<group>"; };
-		7423E6D0199C7EA300026D91 /* SineNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SineNode.swift; sourceTree = "<group>"; };
-		7423E6D8199C84E900026D91 /* BreakpointNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakpointNode.swift; sourceTree = "<group>"; };
-		7423E6DA199C8F8500026D91 /* MixerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixerNode.swift; sourceTree = "<group>"; };
-		7423E6DC199C984200026D91 /* WhiteNoiseNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteNoiseNode.swift; sourceTree = "<group>"; };
-		7423E6DE199CADF400026D91 /* ScaleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleNode.swift; sourceTree = "<group>"; };
-		7423E6E0199CE5C900026D91 /* SquareNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareNode.swift; sourceTree = "<group>"; };
-		7423E6E2199CEF3C00026D91 /* TriangleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleNode.swift; sourceTree = "<group>"; };
+		7423E6C8199C7E3E00026D91 /* SFInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFInput.swift; sourceTree = "<group>"; };
+		7423E6CA199C7E5600026D91 /* SFOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFOutput.swift; sourceTree = "<group>"; };
+		7423E6CC199C7E7700026D91 /* SFOutputNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SFOutputNode.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7423E6CE199C7E9000026D91 /* SFStaticNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStaticNode.swift; sourceTree = "<group>"; };
+		7423E6D0199C7EA300026D91 /* SFSineNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SFSineNode.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7423E6D8199C84E900026D91 /* SFBreakpointNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBreakpointNode.swift; sourceTree = "<group>"; };
+		7423E6DA199C8F8500026D91 /* SFMixerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SFMixerNode.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7423E6DC199C984200026D91 /* SFWhiteNoiseNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWhiteNoiseNode.swift; sourceTree = "<group>"; };
+		7423E6DE199CADF400026D91 /* SFScaleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SFScaleNode.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7423E6E0199CE5C900026D91 /* SFSquareNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SFSquareNode.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7423E6E2199CEF3C00026D91 /* SFTriangleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SFTriangleNode.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		74334FC919A8643900CCD78D /* SFBreakpointNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBreakpointNode.h; sourceTree = "<group>"; };
+		74334FCA19A8643900CCD78D /* SFBreakpointNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBreakpointNode.m; sourceTree = "<group>"; };
+		7433500819A8776B00CCD78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		746FA44719A3AF3C00CA458E /* SFTriangleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTriangleNode.h; sourceTree = "<group>"; };
+		746FA44819A3AF3C00CA458E /* SFTriangleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTriangleNode.m; sourceTree = "<group>"; };
+		746FA44A19A3B1CB00CA458E /* SFStaticNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFStaticNode.h; sourceTree = "<group>"; };
+		746FA44B19A3B1CB00CA458E /* SFStaticNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFStaticNode.m; sourceTree = "<group>"; };
+		746FA44E19A3B54200CA458E /* SFSineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSineNode.h; sourceTree = "<group>"; };
+		746FA44F19A3B54200CA458E /* SFSineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSineNode.m; sourceTree = "<group>"; };
+		746FA45219A3B92400CA458E /* SFMixerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMixerNode.h; sourceTree = "<group>"; };
+		746FA45319A3B92400CA458E /* SFMixerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMixerNode.m; sourceTree = "<group>"; };
+		746FA45519A4160700CA458E /* SFSquareNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSquareNode.h; sourceTree = "<group>"; };
+		746FA45619A4160700CA458E /* SFSquareNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSquareNode.m; sourceTree = "<group>"; };
+		748EA9CB19A4D50100092752 /* SFScaleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFScaleNode.h; sourceTree = "<group>"; };
+		748EA9CC19A4D50100092752 /* SFScaleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFScaleNode.m; sourceTree = "<group>"; };
+		74AFD6C419A38A3000727E3D /* PikoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PikoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74AFD6C619A38AC800727E3D /* SFInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFInput.h; sourceTree = "<group>"; };
+		74AFD6C719A38AC800727E3D /* SFInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFInput.m; sourceTree = "<group>"; };
+		74AFD6C919A38D3600727E3D /* SFOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOutput.h; sourceTree = "<group>"; };
+		74AFD6CA19A38D3600727E3D /* SFOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOutput.m; sourceTree = "<group>"; };
+		74B3CFEF19A62BD6005BF8B4 /* PikoObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PikoObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B3D01219A62CE3005BF8B4 /* PKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAppDelegate.h; sourceTree = "<group>"; };
+		74B3D01319A62CE3005BF8B4 /* PKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAppDelegate.m; sourceTree = "<group>"; };
+		74B3D01519A62CF1005BF8B4 /* PKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKViewController.h; sourceTree = "<group>"; };
+		74B3D01619A62CF1005BF8B4 /* PKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKViewController.m; sourceTree = "<group>"; };
+		74B3D01819A62FD5005BF8B4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74B3D01A19A63455005BF8B4 /* SFSketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSketch.h; sourceTree = "<group>"; };
+		74B3D01B19A63455005BF8B4 /* SFSketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSketch.m; sourceTree = "<group>"; };
 		74C71EB6199A625F00662348 /* Piko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74EBE5BD19A39152009585F7 /* SFBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBuffer.h; sourceTree = "<group>"; };
+		74EBE5BE19A39152009585F7 /* SFBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBuffer.m; sourceTree = "<group>"; };
+		74EBE5C019A394EC009585F7 /* SFBufferOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBufferOperator.h; sourceTree = "<group>"; };
+		74EBE5C119A394EC009585F7 /* SFBufferOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBufferOperator.m; sourceTree = "<group>"; };
+		74EBE5C319A395C1009585F7 /* SFBufferStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBufferStorage.h; sourceTree = "<group>"; };
+		74EBE5C419A395C1009585F7 /* SFBufferStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBufferStorage.m; sourceTree = "<group>"; };
+		74EBE5C619A39B82009585F7 /* SFNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNode.h; sourceTree = "<group>"; };
+		74EBE5C719A39B82009585F7 /* SFNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNode.m; sourceTree = "<group>"; };
+		74EBE5C919A39E44009585F7 /* SFOutputNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOutputNode.h; sourceTree = "<group>"; };
+		74EBE5CA19A39E44009585F7 /* SFOutputNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOutputNode.m; sourceTree = "<group>"; };
+		74EBE5CC19A3A18D009585F7 /* SFWhiteNoiseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFWhiteNoiseNode.h; sourceTree = "<group>"; };
+		74EBE5CD19A3A18D009585F7 /* SFWhiteNoiseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFWhiteNoiseNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		74AFD6BD19A38A3000727E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B3CFEC19A62BD6005BF8B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74C71EB3199A625F00662348 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,9 +184,11 @@
 		7423E672199A665700026D91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7423E673199A665700026D91 /* Main.storyboard */,
+				7433500719A8776B00CCD78D /* Main.storyboard */,
+				7406EAF119A8A3C400DBAA5D /* MainObjC.storyboard */,
 				7423E675199A665700026D91 /* Images.xcassets */,
 				7423E676199A665700026D91 /* Info.plist */,
+				7406EAF419A8A42500DBAA5D /* InfoObjC.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -85,14 +196,15 @@
 		7423E677199A665700026D91 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				7423E678199A665700026D91 /* AppDelegate.swift */,
-				7423E67C199A665700026D91 /* ViewController.swift */,
+				74B3D01819A62FD5005BF8B4 /* main.m */,
+				74B3D01219A62CE3005BF8B4 /* PKAppDelegate.h */,
+				74B3D01319A62CE3005BF8B4 /* PKAppDelegate.m */,
+				7423E678199A665700026D91 /* PKAppDelegate.swift */,
+				74B3D01519A62CF1005BF8B4 /* PKViewController.h */,
+				74B3D01619A62CF1005BF8B4 /* PKViewController.m */,
+				7423E67C199A665700026D91 /* PKViewController.swift */,
 				7423E6D7199C7F8C00026D91 /* Soundflow */,
 				7423E679199A665700026D91 /* Piko-Bridging-Header.h */,
-				7423E687199AF15400026D91 /* SFDebug.h */,
-				7423E688199AF15400026D91 /* SFDebug.m */,
-				7423E67A199A665700026D91 /* SFPlaybackManager.h */,
-				7423E67B199A665700026D91 /* SFPlaybackManager.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -100,7 +212,9 @@
 		7423E6D2199C7F3500026D91 /* Node */ = {
 			isa = PBXGroup;
 			children = (
-				7423E6BC199AF9D400026D91 /* SoundNode.swift */,
+				74EBE5C619A39B82009585F7 /* SFNode.h */,
+				74EBE5C719A39B82009585F7 /* SFNode.m */,
+				7423E6BC199AF9D400026D91 /* SFNode.swift */,
 				7423E6D5199C7F5500026D91 /* Custom */,
 			);
 			name = Node;
@@ -109,8 +223,12 @@
 		7423E6D4199C7F4E00026D91 /* Node I/O */ = {
 			isa = PBXGroup;
 			children = (
-				7423E6C8199C7E3E00026D91 /* SoundInput.swift */,
-				7423E6CA199C7E5600026D91 /* SoundOutput.swift */,
+				74AFD6C619A38AC800727E3D /* SFInput.h */,
+				74AFD6C719A38AC800727E3D /* SFInput.m */,
+				7423E6C8199C7E3E00026D91 /* SFInput.swift */,
+				74AFD6C919A38D3600727E3D /* SFOutput.h */,
+				74AFD6CA19A38D3600727E3D /* SFOutput.m */,
+				7423E6CA199C7E5600026D91 /* SFOutput.swift */,
 			);
 			name = "Node I/O";
 			sourceTree = "<group>";
@@ -118,15 +236,36 @@
 		7423E6D5199C7F5500026D91 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				7423E6D8199C84E900026D91 /* BreakpointNode.swift */,
-				7423E6DA199C8F8500026D91 /* MixerNode.swift */,
-				7423E6CC199C7E7700026D91 /* OutputNode.swift */,
-				7423E6E0199CE5C900026D91 /* SquareNode.swift */,
-				7423E6DE199CADF400026D91 /* ScaleNode.swift */,
-				7423E6D0199C7EA300026D91 /* SineNode.swift */,
-				7423E6CE199C7E9000026D91 /* StaticNode.swift */,
-				7423E6E2199CEF3C00026D91 /* TriangleNode.swift */,
-				7423E6DC199C984200026D91 /* WhiteNoiseNode.swift */,
+				741FB4C019A84071005DDBCD /* SFBreakpoint.h */,
+				741FB4C119A84071005DDBCD /* SFBreakpoint.m */,
+				741FB4C419A842FE005DDBCD /* SFBreakpoint.swift */,
+				74334FC919A8643900CCD78D /* SFBreakpointNode.h */,
+				74334FCA19A8643900CCD78D /* SFBreakpointNode.m */,
+				7423E6D8199C84E900026D91 /* SFBreakpointNode.swift */,
+				746FA45219A3B92400CA458E /* SFMixerNode.h */,
+				746FA45319A3B92400CA458E /* SFMixerNode.m */,
+				7423E6DA199C8F8500026D91 /* SFMixerNode.swift */,
+				74EBE5C919A39E44009585F7 /* SFOutputNode.h */,
+				74EBE5CA19A39E44009585F7 /* SFOutputNode.m */,
+				7423E6CC199C7E7700026D91 /* SFOutputNode.swift */,
+				746FA45519A4160700CA458E /* SFSquareNode.h */,
+				746FA45619A4160700CA458E /* SFSquareNode.m */,
+				7423E6E0199CE5C900026D91 /* SFSquareNode.swift */,
+				748EA9CB19A4D50100092752 /* SFScaleNode.h */,
+				748EA9CC19A4D50100092752 /* SFScaleNode.m */,
+				7423E6DE199CADF400026D91 /* SFScaleNode.swift */,
+				746FA44E19A3B54200CA458E /* SFSineNode.h */,
+				746FA44F19A3B54200CA458E /* SFSineNode.m */,
+				7423E6D0199C7EA300026D91 /* SFSineNode.swift */,
+				746FA44A19A3B1CB00CA458E /* SFStaticNode.h */,
+				746FA44B19A3B1CB00CA458E /* SFStaticNode.m */,
+				7423E6CE199C7E9000026D91 /* SFStaticNode.swift */,
+				746FA44719A3AF3C00CA458E /* SFTriangleNode.h */,
+				746FA44819A3AF3C00CA458E /* SFTriangleNode.m */,
+				7423E6E2199CEF3C00026D91 /* SFTriangleNode.swift */,
+				74EBE5CC19A3A18D009585F7 /* SFWhiteNoiseNode.h */,
+				74EBE5CD19A3A18D009585F7 /* SFWhiteNoiseNode.m */,
+				7423E6DC199C984200026D91 /* SFWhiteNoiseNode.swift */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -134,8 +273,15 @@
 		7423E6D6199C7F7400026D91 /* Buffer */ = {
 			isa = PBXGroup;
 			children = (
-				7423E683199A691300026D91 /* SoundBuffer.swift */,
-				7423E685199A6F9600026D91 /* SoundBufferStorage.swift */,
+				74EBE5BD19A39152009585F7 /* SFBuffer.h */,
+				74EBE5BE19A39152009585F7 /* SFBuffer.m */,
+				7423E683199A691300026D91 /* SFBuffer.swift */,
+				74EBE5C019A394EC009585F7 /* SFBufferOperator.h */,
+				74EBE5C119A394EC009585F7 /* SFBufferOperator.m */,
+				7413F37F19A2239C0002AF43 /* SFBufferOperator.swift */,
+				74EBE5C319A395C1009585F7 /* SFBufferStorage.h */,
+				74EBE5C419A395C1009585F7 /* SFBufferStorage.m */,
+				7423E685199A6F9600026D91 /* SFBufferStorage.swift */,
 			);
 			name = Buffer;
 			sourceTree = "<group>";
@@ -143,7 +289,13 @@
 		7423E6D7199C7F8C00026D91 /* Soundflow */ = {
 			isa = PBXGroup;
 			children = (
-				7423E6BE199AFA5E00026D91 /* SoundSketch.swift */,
+				7423E687199AF15400026D91 /* SFDebug.h */,
+				7423E688199AF15400026D91 /* SFDebug.m */,
+				7423E67A199A665700026D91 /* SFPlaybackManager.h */,
+				7423E67B199A665700026D91 /* SFPlaybackManager.m */,
+				74B3D01A19A63455005BF8B4 /* SFSketch.h */,
+				74B3D01B19A63455005BF8B4 /* SFSketch.m */,
+				7423E6BE199AFA5E00026D91 /* SFSketch.swift */,
 				7423E6C4199B03BF00026D91 /* SoundUtility.swift */,
 				7423E6D6199C7F7400026D91 /* Buffer */,
 				7423E6D4199C7F4E00026D91 /* Node I/O */,
@@ -164,6 +316,8 @@
 			isa = PBXGroup;
 			children = (
 				74C71EB6199A625F00662348 /* Piko.app */,
+				74AFD6C419A38A3000727E3D /* PikoSwift.app */,
+				74B3CFEF19A62BD6005BF8B4 /* PikoObjC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +334,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		74AFD6A619A38A3000727E3D /* PikoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74AFD6C119A38A3000727E3D /* Build configuration list for PBXNativeTarget "PikoSwift" */;
+			buildPhases = (
+				74AFD6A719A38A3000727E3D /* Sources */,
+				74AFD6BD19A38A3000727E3D /* Frameworks */,
+				74AFD6BE19A38A3000727E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PikoSwift;
+			productName = Piko;
+			productReference = 74AFD6C419A38A3000727E3D /* PikoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74B3CFEE19A62BD6005BF8B4 /* PikoObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B3D01019A62BD6005BF8B4 /* Build configuration list for PBXNativeTarget "PikoObjC" */;
+			buildPhases = (
+				74B3CFEB19A62BD6005BF8B4 /* Sources */,
+				74B3CFEC19A62BD6005BF8B4 /* Frameworks */,
+				74B3CFED19A62BD6005BF8B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PikoObjC;
+			productName = PikoObjC;
+			productReference = 74B3CFEF19A62BD6005BF8B4 /* PikoObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
 		74C71EB5199A625F00662348 /* Piko */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74C71ED2199A625F00662348 /* Build configuration list for PBXNativeTarget "Piko" */;
@@ -206,6 +394,10 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Satoshi Muraki";
 				TargetAttributes = {
+					74B3CFEE19A62BD6005BF8B4 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = K55N48AT3F;
+					};
 					74C71EB5199A625F00662348 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = K55N48AT3F;
@@ -226,57 +418,145 @@
 			projectRoot = "";
 			targets = (
 				74C71EB5199A625F00662348 /* Piko */,
+				74AFD6A619A38A3000727E3D /* PikoSwift */,
+				74B3CFEE19A62BD6005BF8B4 /* PikoObjC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		74AFD6BE19A38A3000727E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74AFD6C019A38A3000727E3D /* Images.xcassets in Resources */,
+				7433500A19A8776B00CCD78D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B3CFED19A62BD6005BF8B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7433500B19A8776B00CCD78D /* Main.storyboard in Resources */,
+				7406EAF319A8A3C400DBAA5D /* MainObjC.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74C71EB4199A625F00662348 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7423E67D199A665700026D91 /* Main.storyboard in Resources */,
 				7423E67E199A665700026D91 /* Images.xcassets in Resources */,
+				7433500919A8776B00CCD78D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		74AFD6A719A38A3000727E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74AFD6A819A38A3000727E3D /* SFScaleNode.swift in Sources */,
+				74AFD6A919A38A3000727E3D /* SFPlaybackManager.m in Sources */,
+				74AFD6AA19A38A3000727E3D /* SFDebug.m in Sources */,
+				74AFD6AB19A38A3000727E3D /* PKViewController.swift in Sources */,
+				74AFD6AC19A38A3000727E3D /* SFMixerNode.swift in Sources */,
+				74AFD6AD19A38A3000727E3D /* SFTriangleNode.swift in Sources */,
+				74AFD6AE19A38A3000727E3D /* SFBufferOperator.swift in Sources */,
+				74AFD6AF19A38A3000727E3D /* SFOutput.swift in Sources */,
+				74AFD6B019A38A3000727E3D /* SFOutputNode.swift in Sources */,
+				74AFD6B119A38A3000727E3D /* SoundUtility.swift in Sources */,
+				741FB4C519A842FE005DDBCD /* SFBreakpoint.swift in Sources */,
+				74AFD6B219A38A3000727E3D /* SFNode.swift in Sources */,
+				74AFD6B319A38A3000727E3D /* SFSquareNode.swift in Sources */,
+				74AFD6B419A38A3000727E3D /* SFBufferStorage.swift in Sources */,
+				74AFD6B519A38A3000727E3D /* SFInput.swift in Sources */,
+				74AFD6B619A38A3000727E3D /* SFBreakpointNode.swift in Sources */,
+				74AFD6B719A38A3000727E3D /* PKAppDelegate.swift in Sources */,
+				74AFD6B819A38A3000727E3D /* SFStaticNode.swift in Sources */,
+				74AFD6B919A38A3000727E3D /* SFBuffer.swift in Sources */,
+				74AFD6BA19A38A3000727E3D /* SFWhiteNoiseNode.swift in Sources */,
+				74AFD6BB19A38A3000727E3D /* SFSineNode.swift in Sources */,
+				74AFD6BC19A38A3000727E3D /* SFSketch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B3CFEB19A62BD6005BF8B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74B3D02519A63A17005BF8B4 /* SFBufferStorage.m in Sources */,
+				74B3D01419A62CE3005BF8B4 /* PKAppDelegate.m in Sources */,
+				74B3D01919A62FD5005BF8B4 /* main.m in Sources */,
+				74B3D02719A64047005BF8B4 /* SFMixerNode.m in Sources */,
+				74B3D01E19A639B8005BF8B4 /* SFOutput.m in Sources */,
+				74B3D02919A6404D005BF8B4 /* SFScaleNode.m in Sources */,
+				74334FCC19A8643900CCD78D /* SFBreakpointNode.m in Sources */,
+				74B3D02D19A64058005BF8B4 /* SFWhiteNoiseNode.m in Sources */,
+				74B3D01D19A639B2005BF8B4 /* SFNode.m in Sources */,
+				741FB4C319A84071005DDBCD /* SFBreakpoint.m in Sources */,
+				74B3D01F19A639BB005BF8B4 /* SFInput.m in Sources */,
+				74B3D01719A62CF1005BF8B4 /* PKViewController.m in Sources */,
+				74B3D02119A63A0C005BF8B4 /* SFDebug.m in Sources */,
+				74B3D02019A639C0005BF8B4 /* SFOutputNode.m in Sources */,
+				74B3D01C19A63455005BF8B4 /* SFSketch.m in Sources */,
+				74B3D02219A63A0F005BF8B4 /* SFPlaybackManager.m in Sources */,
+				74B3D02319A63A12005BF8B4 /* SFBuffer.m in Sources */,
+				74B3D02819A6404B005BF8B4 /* SFSquareNode.m in Sources */,
+				74B3D02B19A64052005BF8B4 /* SFStaticNode.m in Sources */,
+				74B3D02C19A64054005BF8B4 /* SFTriangleNode.m in Sources */,
+				74B3D02A19A64050005BF8B4 /* SFSineNode.m in Sources */,
+				74B3D02419A63A15005BF8B4 /* SFBufferOperator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74C71EB2199A625F00662348 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7423E6DF199CADF400026D91 /* ScaleNode.swift in Sources */,
+				741FB4C619A85D6A005DDBCD /* SFSketch.m in Sources */,
 				7423E6C7199B0D3500026D91 /* SFPlaybackManager.m in Sources */,
 				7423E689199AF15400026D91 /* SFDebug.m in Sources */,
-				7423E682199A665700026D91 /* ViewController.swift in Sources */,
-				7423E6DB199C8F8500026D91 /* MixerNode.swift in Sources */,
-				7423E6E3199CEF3C00026D91 /* TriangleNode.swift in Sources */,
-				7423E6CB199C7E5600026D91 /* SoundOutput.swift in Sources */,
-				7423E6CD199C7E7700026D91 /* OutputNode.swift in Sources */,
+				746FA45719A4160700CA458E /* SFSquareNode.m in Sources */,
+				746FA44D19A3B42A00CA458E /* SFTriangleNode.m in Sources */,
+				748EA9CD19A4D50100092752 /* SFScaleNode.m in Sources */,
+				74334FCB19A8643900CCD78D /* SFBreakpointNode.m in Sources */,
+				746FA45419A3B92400CA458E /* SFMixerNode.m in Sources */,
+				7423E682199A665700026D91 /* PKViewController.swift in Sources */,
+				741FB4C219A84071005DDBCD /* SFBreakpoint.m in Sources */,
+				74AFD6C819A38AC800727E3D /* SFInput.m in Sources */,
+				74EBE5C819A39B82009585F7 /* SFNode.m in Sources */,
+				746FA45119A3B82C00CA458E /* SFStaticNode.m in Sources */,
+				74EBE5CB19A39E44009585F7 /* SFOutputNode.m in Sources */,
+				74EBE5CE19A3A18D009585F7 /* SFWhiteNoiseNode.m in Sources */,
+				74EBE5C219A394EC009585F7 /* SFBufferOperator.m in Sources */,
+				74AFD6CB19A38D3600727E3D /* SFOutput.m in Sources */,
+				746FA45019A3B54200CA458E /* SFSineNode.m in Sources */,
 				7423E6C5199B03BF00026D91 /* SoundUtility.swift in Sources */,
-				7423E6BD199AF9D400026D91 /* SoundNode.swift in Sources */,
-				7423E6E1199CE5C900026D91 /* SquareNode.swift in Sources */,
-				7423E686199A6F9600026D91 /* SoundBufferStorage.swift in Sources */,
-				7423E6C9199C7E3E00026D91 /* SoundInput.swift in Sources */,
-				7423E6D9199C84E900026D91 /* BreakpointNode.swift in Sources */,
-				7423E680199A665700026D91 /* AppDelegate.swift in Sources */,
-				7423E6CF199C7E9000026D91 /* StaticNode.swift in Sources */,
-				7423E684199A691300026D91 /* SoundBuffer.swift in Sources */,
-				7423E6DD199C984200026D91 /* WhiteNoiseNode.swift in Sources */,
-				7423E6D1199C7EA300026D91 /* SineNode.swift in Sources */,
-				7423E6BF199AFA5E00026D91 /* SoundSketch.swift in Sources */,
+				7423E680199A665700026D91 /* PKAppDelegate.swift in Sources */,
+				74EBE5C519A395C1009585F7 /* SFBufferStorage.m in Sources */,
+				74EBE5BF19A39152009585F7 /* SFBuffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7423E673199A665700026D91 /* Main.storyboard */ = {
+		7406EAF119A8A3C400DBAA5D /* MainObjC.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7423E674199A665700026D91 /* Base */,
+				7406EAF219A8A3C400DBAA5D /* Base */,
+			);
+			name = MainObjC.storyboard;
+			sourceTree = "<group>";
+		};
+		7433500719A8776B00CCD78D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7433500819A8776B00CCD78D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -284,6 +564,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		74AFD6C219A38A3000727E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Piko/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PikoSwift;
+				SWIFT_OBJC_BRIDGING_HEADER = "Piko/Sources/Piko-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74AFD6C319A38A3000727E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Piko/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PikoSwift;
+				SWIFT_OBJC_BRIDGING_HEADER = "Piko/Sources/Piko-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		74B3D00C19A62BD6005BF8B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"PIKO_OBJC=1",
+				);
+				INFOPLIST_FILE = Piko/Resources/InfoObjC.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74B3D00D19A62BD6005BF8B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"PIKO_OBJC=1",
+				);
+				INFOPLIST_FILE = Piko/Resources/InfoObjC.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		74C71ED0199A625F00662348 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,6 +711,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PIKO_PREFERS_OBJC,
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Piko/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -385,6 +730,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PIKO_PREFERS_OBJC,
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Piko/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +744,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		74AFD6C119A38A3000727E3D /* Build configuration list for PBXNativeTarget "PikoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74AFD6C219A38A3000727E3D /* Debug */,
+				74AFD6C319A38A3000727E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74B3D01019A62BD6005BF8B4 /* Build configuration list for PBXNativeTarget "PikoObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74B3D00C19A62BD6005BF8B4 /* Debug */,
+				74B3D00D19A62BD6005BF8B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		74C71EB1199A625F00662348 /* Build configuration list for PBXProject "Piko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,8 +1,6 @@
 //
 //  SoundUtility.swift
-//  Piko
 //
-//  Created by Satoshi Muraki on 8/13/14.
 //  Copyright (c) 2014 Satoshi Muraki. All rights reserved.
 //
 
